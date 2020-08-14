@@ -1,0 +1,31 @@
+http://localhost:3000/api/users
+Authorization: eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiI1ZjIzZTc2NWZjZGEzZDFlMDMzNmRlMDAiLCJpYXQiOjE1OTczMTEzOTcsImV4cCI6MTU5OTkwMzM5NywiZmlyc3RuYW1lIjoiaGFubmFoIiwibGFzdG5hbWUiOiJEb25hbGQiLCJwc2V1ZG8iOiJoYW5uYWgiLCJlbWFpbCI6Imhhbm5haEBlbWFpbC5jb20iLCJyb2xlIjoiUk9MRV9VU0VSIiwiaW1hZ2UiOm51bGx9.QiQqMwzjd9QsGATZ9Xtu2pxYX84sGtSA-L2NgZB2d2Q
+
+###
+
+# 654 correspond à l'id de ce qu'on veut atteindre ; 
+# au dessus, c'était pour tous les utilisateurs
+http://localhost:3000/api/users/5f098a7a87152c8242fa0be7
+
+###
+
+POST http://localhost:3000/api/users/signup
+Content-Type: application/json
+
+{
+    "firstname" : "hannah",
+    "lastname" : "Donald",
+    "pseudo" : "hannah",
+    "email" : "hannah@email.com",
+    "password" : "hannah"
+}
+
+###
+
+POST http://localhost:3000/api/users/login
+Content-Type: application/json
+
+{
+   "email" : "hannah@email.com",
+    "password" : "hannah"
+}
